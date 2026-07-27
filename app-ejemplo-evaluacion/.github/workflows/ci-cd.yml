@@ -3,6 +3,10 @@ on:
   push:
     branches: [master]
 
+defaults:
+  run:
+    working-directory: app-ejemplo-evaluacion
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
