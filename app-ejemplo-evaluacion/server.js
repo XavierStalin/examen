@@ -16,7 +16,7 @@ function requestHandler(req, res) {
     return;
   }
   res.writeHead(404, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify({ error: 'Ruta no encontrada' }));
+  res.end(JSON.stringify({ error: 'Ruta no encontradaa' }));
 }
 
 const server = http.createServer(requestHandler);
