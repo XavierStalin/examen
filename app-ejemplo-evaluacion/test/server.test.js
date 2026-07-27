@@ -26,7 +26,7 @@ test('GET / responde 200 con un mensaje y una version', async () => {
   server.close();
 });
 
-test('una ruta inexistente responde 404', async () => {
+test('una ruta inexistente respondeee 404', async () => {
   await new Promise((resolve) => server.listen(0, resolve));
   const { port } = server.address();
 
