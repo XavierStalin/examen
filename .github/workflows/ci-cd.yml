@@ -35,3 +35,4 @@ jobs:
       - run: docker build -t ghcr.io/xavierstalin/examen:${{ github.sha }} .
       - run: docker push ghcr.io/xavierstalin/examen:${{ github.sha }}
       - run: kubectl set image deployment/web-deployment web=ghcr.io/xavierstalin/examen:${{ github.sha }}
+        continue-on-error: true
